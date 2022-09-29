@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- info for the tab -->
+        <title>Joy Zhang</title>
+        <link rel="icon" type="image/x-icon" href="/public/images/favicon.jpg">
+
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="/public/styles.css" />
+
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="home">
+                <h1>joy zhang</h1>
+            </div>
+            <div class="link">
+                <a href="#about">
+                    <h4>about</h4>
+                </a>
+            </div>
+            <div class="link">
+                <a href="#work">
+                    <h4>work</h4>
+                </a>
+            </div>
+            <div class="link">
+                <a href="#contact">
+                    <h4>contact</h4>
+                </a>
+            </div>            
+        </div>
+
+        <div class="about" id="about">
+            <div class="photo">
+                <img src="/public/images/me.jpg" style="width: 400px; height: auto; border-radius: 20px;">
+            </div>
+            <div class="about-info">
+                <div class="name">
+                    <h2>joy zhang</h2>
+                </div>
+                <div class="description">
+                    <h3>product design + front end dev</h3>
+                    <h3>
+                        cs @ uc berkeley looking to design human-centered
+                        solutions for real life problems.
+                    </h3>
+                    <h3>                        
+                        on the side: photography, cooking, and learning new 
+                        languages
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="work" id="work">
+            <div class="mywork">
+                <h5>my work.</h5>
+            </div>
+            <div class="work-grid">
+                <div class="work-card">
+                    <div class="work-photo">
+                        <img src="/public/images/livewell.png" style="width: 100%; border-radius: 20px;">
+                    </div>
+                    <div class="work-name">
+                        <h4>livewell</h4>
+                        <p style="margin-top: -30px;">ux design + front-end</p>
+                    </div>
+                </div>
+                <div class="work-card">
+                    <div class="work-photo">
+                        <img src="/public/images/aura.png" style="width: 100%; border-radius: 20px;">
+                    </div>
+                    <div class="work-name">
+                        <h4>aura</h4>
+                        <p style="margin-top: -30px;">product design</p>
+                    </div>
+                </div>
+                <div class="work-card">
+                    <div class="work-photo">
+                        <img src="/public/images/roster.png" style="width: 100%; border-radius: 20px;">
+                    </div>
+                    <div class="work-name">
+                        <h4>roster.afx.dance</h4>
+                        <p style="margin-top: -30px;">product design</p>
+                    </div>
+                </div>
+                <div class="work-card">
+                    <div class="work-photo">
+                        <img src="/public/images/black.png" style="width: 100%; border-radius: 20px;">
+                    </div>
+                    <div class="work-name">
+                        <h4>to be added...</h4>
+                        <p style="margin-top: -30px;">works are in progress :)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <h6>contact me.</h6>
+            <!-- email button -->
+            <a href="mailto:joy.zhang@berkeley.edu">
+                <button class="button">email!</button>
+            </a>
+            <!-- linkedin button -->
+            <a href="https://linkedin.com/in/joytyzhang" target="_blank">
+                <button class="button">linkedin</button>
+            </a>
+            <!-- say hi -->
+            <h6>say hi.</h6>
+            <form>
+                <label for="name" style="font-family: publicsans; font-size: 20px;">your name</label>
+                <br>
+                <br>
+                <input type="text" id="name" name="name" style="width: 400px; height: 40px; border-radius: 20px; border: 0.5px solid;"><br>
+                <br>
+                <input type="submit" value="submit" onclick="sayHi();" id="submitbtn">
+              </form>
+        </div>
+
+        <!-- when submitting form, user is greeted by their name -->
+        <script>
+            function sayHi() {
+                var userName = document.getElementById("name").value;
+                alert("Hi " + userName + "!");
+            }
+        </script>
+        
+    </body>
+</html>
