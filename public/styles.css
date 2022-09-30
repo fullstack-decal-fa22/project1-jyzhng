@@ -128,10 +128,10 @@ p {
 /* fonts */
 @font-face {
     font-family: publicsans;
-    src: url("/public/fonts/PublicSans-Thin.ttf");
+    src: url("/project1-jyzhng/public/fonts/PublicSans-Thin.ttf");
   }
 
 @font-face {
     font-family: playfair;
-    src: url("/public/fonts/PlayfairDisplay-VariableFont_wght.ttf");
+    src: url("/project1-jyzhng/public/fonts/PlayfairDisplay-VariableFont_wght.ttf");
   }
